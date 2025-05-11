@@ -10,9 +10,9 @@ export default function Services() {
       discretion: "I create responsive, clean, and modern front-end designs.",
     },
     {
-      Service: "Ui/Ux Design",
+      Service: "Web Testing",
       discretion:
-        "I create creative, engaging, responsive, functional, and aesthetic designs.",
+        "I ensure functionality, usability, performance, security, and compatibility.",
     },
     {
       Service: "Logo Design",
@@ -28,7 +28,7 @@ export default function Services() {
   return (
     <div className="min-h-[calc(100dvh-100px)] w-full flex justify-center items-center flex-wrap">
       {services.map((service, index) => (
-        <div className="w-full md:w-6/12 p-5 md:p-10 group">
+        <div key={service} className="w-full lg:w-6/12 p-5 lg:p-10 group">
           <div className="flex flex-col border-b-[1px] border-zinc-700 pb-2 gap-5 h-[250px]">
             <div className="w-full flex items-center justify-between">
               <span className="text-6xl group-hover:text-[var(--main-color)] transition-colors duration-300">
@@ -42,9 +42,9 @@ export default function Services() {
                 <IoIosArrowRoundForward className="text-black text-4xl" />
               </motion.span>
             </div>
-            <div className="text-4xl text-white group-hover:text-[var(--main-color)] transition-colors duration-300">
+            <h2 className="text-4xl text-white group-hover:text-[var(--main-color)] transition-colors duration-300">
               {service.Service}
-            </div>
+            </h2>
             <p className="text-zinc-500">{service.discretion}</p>
           </div>
         </div>

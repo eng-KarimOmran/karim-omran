@@ -12,7 +12,6 @@ export default function Navbar() {
     { path: "/services", content: "Services" },
     { path: "/resume", content: "Resume" },
     { path: "/work", content: "Work" },
-    { path: "/contact", content: "Contact" },
   ];
 
   const path = usePathname();
@@ -34,22 +33,22 @@ export default function Navbar() {
           onClick={() => {
             setToggle(!toggle);
           }}
-          className="static md:hidden text-zinc-300 text-xl"
+          className="static lg:hidden text-zinc-300 text-xl"
         >
           <CiTextAlignLeft />
         </button>
 
         <div
-          className={`fixed z-10 start-0 overflow-hidden top-0 md:static bg-zinc-900 md:bg-transparent bottom-0 py-2 transition-all duration-300 ${
+          className={`fixed z-10 start-0 overflow-hidden top-0 lg:static bg-zinc-900 lg:bg-transparent bottom-0 py-2 transition-all duration-300 ${
             toggle ? "end-0" : "end-full"
           }`}
         >
-          <div className="py-3 flex justify-between items-center md:hidden px-[32px]">
+          <div className="py-3 flex justify-between items-center lg:hidden px-[32px]">
             <a
               className="flex items-center text-4xl font-semibold text-zinc-300"
               href={"/"}
             >
-              <span className="font-bold">Karim</span>
+              <h1 className="font-bold">Karim</h1>
               <span className="text-[var(--main-color)]">.</span>
             </a>
             <button
@@ -61,7 +60,7 @@ export default function Navbar() {
               <RiCloseLargeLine />
             </button>
           </div>
-          <ul className="flex gap-5 justify-between items-center flex-col md:flex-row text-xl">
+          <ul className="flex gap-5 justify-between items-center flex-col lg:flex-row text-xl">
             {links.map((link) => (
               <li key={link.path}>
                 <Link
@@ -76,10 +75,10 @@ export default function Navbar() {
             ))}
             <li className="p-2">
               <Link
-                className="px-5 py-0.5 bg-[var(--main-color)]/70 hover:bg-[var(--main-color)] transition-all duration-300 text-white rounded-4xl"
-                href={"/hire-my"}
+                className={`px-5 py-0.5 hover:bg-[var(--main-color)] transition-all duration-300 text-white rounded-4xl ${path === "/sent-me" ? "bg-[var(--main-color)]" : "bg-[var(--main-color)]/70"}`}
+                href={"/sent-me"}
               >
-                Hire my
+                Sent Me
               </Link>
             </li>
           </ul>
