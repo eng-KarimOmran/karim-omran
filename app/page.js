@@ -17,9 +17,9 @@ export default function Home() {
 
   const stats = [
     { content: "Years Experience", num: 1 },
-    { content: "Projects Delivered", num: 7 },
-    { content: "Technologies Mastered", num: 22 },
-    { content: "Code Contributions", num: 500 },
+    { content: "Projects Delivered", num: 4 },
+    { content: "Technologies Mastered", num: 17 },
+    { content: "Code Contributions", num: 2 },
   ];
 
 
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="flex justify-start items-center gap-5 text-[var(--main-color)] flex-col md:flex-row">
             <a
-              className="border-[1px] border-[var(--main-color)] flex items-center justify-center gap-3 h-[35px] px-3 rounded-3xl text-sm hover:bg-[#ed8cf2]/70 transition-all duration-300"
+              className="border-[1px] border-[var(--main-color)] flex items-center justify-center gap-3 h-[35px] px-3 rounded-3xl text-sm hover:bg-[var(--main-color)]/50 transition-all duration-300"
               href="CV Karim Omran.pdf"
               download="CV Karim Omran.pdf"
             >
@@ -49,7 +49,7 @@ export default function Home() {
               {socialLinks.map((link) => (
                 <a
                   key={link.path}
-                  className="w-[35px] h-[35px] rounded-[50%] border-[1px] border-[var(--main-color)] p-0.5 flex justify-center items-center hover:bg-[#ed8cf2]/70 transition-all duration-300"
+                  className="w-[35px] h-[35px] rounded-[50%] border-[1px] border-[var(--main-color)] p-0.5 flex justify-center items-center hover:bg-[var(--main-color)]/50 transition-all duration-300"
                   target="_blank"
                   href={link.path}
                 >

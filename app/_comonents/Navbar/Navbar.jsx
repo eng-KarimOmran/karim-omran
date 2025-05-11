@@ -76,7 +76,7 @@ export default function Navbar() {
             ))}
             <li className="p-2">
               <Link
-                className="px-5 py-0.5 bg-[var(--main-color)] text-white rounded-4xl"
+                className="px-5 py-0.5 bg-[var(--main-color)]/70 hover:bg-[var(--main-color)] transition-all duration-300 text-white rounded-4xl"
                 href={"/hire-my"}
               >
                 Hire my
