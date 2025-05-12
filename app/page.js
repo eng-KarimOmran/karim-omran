@@ -11,9 +11,9 @@ export default function Home() {
   const socialLinks = [
     { path: "https://github.com/eng-KarimOmran", icon: <FaGithub /> },
     { path: "https://www.linkedin.com/in/karim-omran", icon: <FaLinkedinIn /> },
-    { path: "https://wa.me/01277913201", icon: <FaWhatsapp /> },
+    { path: "https://wa.me/201277913201", icon: <FaWhatsapp /> },
     {
-      path: "https://mail.google.com/mail/?view=cm&to=eng.karimomran@gmail.com",
+      path: "mailto:eng.karimomran@gmail.com",
       icon: <SiGmail />,
     },
   ];

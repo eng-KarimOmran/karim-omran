@@ -7,9 +7,8 @@ export default function Education({ data }) {
 
   return content.length > 0 ? (
     content.map((training) => (
-      <div className="p-5 w-full lg:w-6/12 h-6/12">
+      <div key={training.id} className="p-5 w-full lg:w-6/12 h-6/12">
         <div
-          key={training.id}
           className="bg-zinc-800 w-full h-full p-3 flex flex-col justify-between"
         >
           <span className="text-[var(--main-color)]">{training.date}</span>
