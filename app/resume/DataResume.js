@@ -96,7 +96,7 @@ export default function DataResume() {
             Phone: "(+20) 1277913201",
             Email: "eng.karimomran@gmail.com",
             Languages: ["Arabic,", "English"],
-            Education:"Diploma in IT"
+            Education: "Diploma in IT",
           },
         ],
       },

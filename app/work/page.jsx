@@ -70,6 +70,16 @@ export default function Work() {
       demo: "https://games-online-nu.vercel.app/",
       img: "games.png",
     },
+    {
+      id: "06",
+      name: "Weather",
+      description:
+        "Weather provides real-time updates and accurate forecasts for your location. Stay informed with detailed weather reports, including temperature, humidity, wind speed, and forecasts for the coming days to help you plan your activities.",
+      technologies: "Javascript , Html5 , Css , Bootstrap",
+      gitHub: "https://github.com/eng-KarimOmran/The-Weather/",
+      demo: "https://the-weather-now-one.vercel.app/",
+      img: "weather.png",
+    },
   ];
   const [project, setProject] = useState(0);
 
@@ -135,7 +145,7 @@ export default function Work() {
             <button className="button pointer-events-auto" onClick={next}>
               <IoIosArrowBack className="text-2xl" />
             </button>
-            <button className="button pointer-events-auto" onClick={previous} >
+            <button className="button pointer-events-auto" onClick={previous}>
               <IoIosArrowForward className="text-2xl" />
             </button>
           </div>

@@ -17,9 +17,9 @@ export default function Home() {
 
   const stats = [
     { content: "Years Experience", num: 1 },
-    { content: "Projects Delivered", num: 4 },
+    { content: "Projects Delivered", num: 6 },
     { content: "Technologies Mastered", num: 7 },
-    { content: "Code Contributions", num: 2 },
+    { content: "Code Contributions", num: 30 },
   ];
   
   return (

@@ -75,7 +75,11 @@ export default function Navbar() {
             ))}
             <li className="p-2">
               <Link
-                className={`px-5 py-0.5 hover:bg-[var(--main-color)] transition-all duration-300 text-white rounded-4xl ${path === "/sent-me" ? "bg-[var(--main-color)]" : "bg-[var(--main-color)]/70"}`}
+                className={`px-5 py-0.5 hover:bg-[var(--main-color)] transition-all duration-300 text-white rounded-4xl ${
+                  path === "/sent-me"
+                    ? "bg-[var(--main-color)]"
+                    : "bg-[var(--main-color)]/70"
+                }`}
                 href={"/sent-me"}
               >
                 Sent Me
