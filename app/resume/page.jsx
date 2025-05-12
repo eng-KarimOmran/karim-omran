@@ -25,7 +25,7 @@ export default function Resume() {
   }
 
   return (
-    <div className="w-full min-h-[calc(100dvh-100px)] flex justify-center items-center">
+    <div className="w-full min-h-[calc(100dvh-100px)] flex justify-center items-center p-3">
       <div className="flex justify-between flex-col lg:flex-row gap-5 w-full h-full items-center">
         <div className="flex flex-col gap-5">
           <h2 className="text-5xl text-white">Why hire me?</h2>
@@ -37,7 +37,7 @@ export default function Resume() {
             {resumeSections.map((section) => (
               <li
                 key={section.label}
-                className={`w-[250px] h-[40px] flex justify-center items-center rounded-lg hover:bg-[var(--main-color)] transition-all group ${
+                className={`w-[250px] h-[40px] flex justify-center items-center mx-auto rounded-lg hover:bg-[var(--main-color)] transition-all group ${
                   selectedSection.label === section.label
                     ? "bg-[var(--main-color)]"
                     : "bg-zinc-800"

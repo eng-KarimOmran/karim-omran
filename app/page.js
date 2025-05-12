@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col gap-3 items-center lg:items-start">
           <h2 className="text-xl">Software Developer</h2>
           <div className="text-5xl lg:text-7xl text-white">Hello Iam</div>
-          <h3 className="text-5xl lg:text-7xl text-[var(--main-color)]">
+          <h3 className="text-5xl text-center lg:text-7xl text-[var(--main-color)]">
             Karim Abdelhalim
           </h3>
           <p className="text-lg text-gray-500 max-w-[300px]">
