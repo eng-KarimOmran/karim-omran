@@ -37,7 +37,7 @@ export default function Resume() {
             {resumeSections.map((section) => (
               <li
                 key={section.label}
-                className={`w-[250px] h-[40px] flex justify-center items-center rounded-lg ${
+                className={`w-[250px] h-[40px] flex justify-center items-center rounded-lg hover:bg-[var(--main-color)] transition-all group ${
                   selectedSection.label === section.label
                     ? "bg-[var(--main-color)]"
                     : "bg-zinc-800"
@@ -47,7 +47,7 @@ export default function Resume() {
                   onClick={() => {
                     setSelectedSection(section);
                   }}
-                  className={`text-xl cursor-pointer ${
+                  className={`text-xl cursor-pointer group-hover:text-black ${
                     selectedSection.label === section.label
                       ? "text-black"
                       : "text-white"
