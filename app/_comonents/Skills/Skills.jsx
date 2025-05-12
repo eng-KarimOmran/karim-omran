@@ -4,7 +4,7 @@ export default function Skills({ data }) {
   const { content, name } = data;
   return content[0].id ? (
     content.map((skill) => (
-      <div className="p-8 w-6/12 lg:w-3/12 h-6/12">
+      <div className="p-10 w-full md:w-6/12 lg:w-3/12 h-6/12">
         <div
           key={skill.id}
           className="bg-zinc-800 text-6xl h-full rounded-3xl p-3 flex flex-col justify-center items-center relative group hover:text-[var(--main-color)] transition-all duration-300"
