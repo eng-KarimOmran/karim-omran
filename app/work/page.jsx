@@ -107,7 +107,7 @@ export default function Work() {
           </div>
           <div className="pt-5 flex gap-5 items-center">
             <a target="_blank" href={projects[project].gitHub}>
-              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-zinc-700 hover:scale-[1.1] transition-all duration-300 p-1">
+              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-zinc-700 hover:scale-[1.1] transition-all duration-300">
                 {
                   <img
                     src="Icon/logo-github.gif"
@@ -142,10 +142,11 @@ export default function Work() {
             ))}
           </Slider>
           <div className="absolute inset-0 px-1 lg:px-5 flex justify-between items-center pointer-events-none text-white">
-            <button className="button pointer-events-auto" onClick={next}>
+            <button className="button pointer-events-auto" onClick={previous}>
               <IoIosArrowBack className="text-2xl" />
             </button>
-            <button className="button pointer-events-auto" onClick={previous}>
+
+            <button className="button pointer-events-auto" onClick={next}>
               <IoIosArrowForward className="text-2xl" />
             </button>
           </div>

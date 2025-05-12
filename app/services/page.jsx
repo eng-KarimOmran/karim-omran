@@ -28,7 +28,7 @@ export default function Services() {
   return (
     <div className="min-h-[calc(100dvh-100px)] w-full flex justify-center items-center flex-wrap">
       {services.map((service, index) => (
-        <div key={service} className="w-full lg:w-6/12 p-5 lg:p-10 group">
+        <div key={service} className="w-full lg:w-6/12 p-5 lg:p-9 group">
           <div className="flex flex-col border-b-[1px] border-zinc-700 pb-2 gap-5 h-[250px]">
             <div className="w-full flex items-center justify-between">
               <span className="text-6xl group-hover:text-[var(--main-color)] transition-colors duration-300">

@@ -5,14 +5,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { AnimatePresence, motion } from "framer-motion";
-import CountUp from 'react-countup'
+import CountUp from "react-countup";
 
 export default function Home() {
   const socialLinks = [
     { path: "https://github.com/eng-KarimOmran", icon: <FaGithub /> },
     { path: "https://www.linkedin.com/in/karim-omran", icon: <FaLinkedinIn /> },
     { path: "https://wa.me/01277913201", icon: <FaWhatsapp /> },
-    {path: "https://mail.google.com/mail/?view=cm&to=eng.karimomran@gmail.com", icon: <SiGmail />,},
+    {
+      path: "https://mail.google.com/mail/?view=cm&to=eng.karimomran@gmail.com",
+      icon: <SiGmail />,
+    },
   ];
 
   const stats = [
@@ -21,7 +24,7 @@ export default function Home() {
     { content: "Technologies Mastered", num: 7 },
     { content: "Code Contributions", num: 30 },
   ];
-  
+
   return (
     <div className="min-h-[calc(100dvh-100px)] flex flex-col justify-around">
       <div className="flex justify-between items-center flex-col-reverse md:flex-row">
@@ -67,7 +70,7 @@ export default function Home() {
                 cy="50"
                 r="48"
                 fill="none"
-                stroke="#ed8cf2"
+                stroke="var(--main-color)"
                 strokeWidth="2"
                 initial={{ strokeDasharray: "24 10 0 0" }}
                 animate={{
@@ -111,7 +114,19 @@ export default function Home() {
             className="flex items-center gap-1 justify-center w-full md:w-6/12 lg:w-auto max-w-[250px] pb-3 pt-8 border-b-[1px] border-gray-300/20"
           >
             <span className="text-5xl text-white">
-              {stat.content === "Years Experience" ? <><CountUp prefix="+" delay={1} start={0} end={stat.num} duration={4}/></> : <CountUp delay={1} start={0} end={stat.num} duration={3}/>}
+              {stat.content === "Years Experience" ? (
+                <>
+                  <CountUp
+                    prefix="+"
+                    delay={1}
+                    start={0}
+                    end={stat.num}
+                    duration={4}
+                  />
+                </>
+              ) : (
+                <CountUp delay={1} start={0} end={stat.num} duration={3} />
+              )}
             </span>
             <span className="max-w-[100px]">{stat.content}</span>
           </div>
