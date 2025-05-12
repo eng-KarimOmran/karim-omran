@@ -29,7 +29,7 @@ export default function Home() {
           <h2 className="text-xl">Software Developer</h2>
           <div className="text-5xl lg:text-7xl text-white">Hello Iam</div>
           <h3 className="text-5xl lg:text-7xl text-[var(--main-color)]">
-            Karim Omran
+            Karim Abdelhalim
           </h3>
           <p className="text-lg text-gray-500 max-w-[300px]">
             Passionate about building clean, user-friendly interfaces, I bring

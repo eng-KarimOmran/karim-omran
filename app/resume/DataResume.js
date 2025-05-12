@@ -89,14 +89,14 @@ export default function DataResume() {
         content: [
           {
             id: "0",
-            Name: "Karim Abdelhalim Moustafa Omran",
+            Name: "Karim Abdelhalim",
             Experience: "+1 Year",
             Country: "Egypt",
             State: "Alexandria",
             Phone: "(+20) 1277913201",
             Email: "eng.karimomran@gmail.com",
-            Languages: ["Arabic", "English"],
-            ZipCode:"21624"
+            Languages: ["Arabic,", "English"],
+            Education:"Diploma in IT"
           },
         ],
       },
