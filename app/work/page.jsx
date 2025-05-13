@@ -103,7 +103,7 @@ export default function Work() {
   };
   
   return (
-    <div className="min-h-[calc(100dvh-100px)] flex flex-col items-center justify-center">
+    <div className="min-h-[calc(100dvh-100px)] flex flex-col items-center justify-center fadeIn-content">
       <div className="w-full flex justify-between items-center flex-col-reverse lg:flex-row flex-wrap">
         <div className="w-full px-1  lg:w-6/12 lg:p-5">
           <div className="border-b-[1px] border-b-zinc-700 py-3 flex flex-col gap-5">
