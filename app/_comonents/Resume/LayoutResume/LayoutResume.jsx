@@ -10,7 +10,7 @@ export default function LayoutResume({ data, contentComponent }) {
     { path: "/resume/skills", name: "Skills" },
     { path: "/resume/about-me", name: "About me" },
   ];
-
+  
   return (
     <div className="w-full min-h-[calc(100dvh-100px)] flex justify-center items-center p-3">
       <div className="flex justify-between flex-col lg:flex-row gap-5 w-full h-full items-center">

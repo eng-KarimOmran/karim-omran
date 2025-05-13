@@ -4,24 +4,24 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Services() {
   const services = [
     {
-      id:"01",
+      id: "01",
       Service: "Frontend Development",
       discretion: "I create responsive, clean, and modern front-end designs.",
     },
     {
-      id:"02",
+      id: "02",
       Service: "Web Testing",
       discretion:
         "I ensure functionality, usability, performance, security, and compatibility.",
     },
     {
-      id:"03",
+      id: "03",
       Service: "Logo Design",
       discretion:
         "I create unique, memorable, versatile, professional, and timeless logos.",
     },
     {
-      id:"04",
+      id: "04",
       Service: "SEO",
       discretion:
         "I optimize websites for better visibility, traffic, rankings, engagement, and conversion.",

@@ -69,7 +69,9 @@ export default function Navbar() {
               <li key={link.path}>
                 <Link
                   className={`hover:text-[var(--main-color)] transition-all duration-300 ${
-                    link.path === path ? "text-[var(--main-color)]" : null
+                    link.path.split("/")[1] === path.split("/")[1]
+                      ? "text-[var(--main-color)]"
+                      : null
                   }`}
                   href={link.path}
                 >

@@ -41,6 +41,7 @@ export default function DataHome() {
               className="w-[35px] h-[35px] rounded-[50%] border-[1px] border-[var(--main-color)] p-0.5 flex justify-center items-center hover:bg-[var(--main-color)]/50 transition-all duration-300"
               target="_blank"
               href={link.path}
+              rel="noopener noreferrer"
             >
               {link.icon}
             </a>
