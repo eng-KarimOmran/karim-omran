@@ -17,8 +17,8 @@ export default function Education({ data }) {
   return (
     <>
       {data.map((course) => (
-        <div key={course.id} className="p-5 w-full lg:w-6/12 h-6/12">
-          <div className="bg-zinc-800 w-full h-full p-3 flex flex-col justify-between">
+        <div key={course.id} className="p-1 w-full lg:w-6/12 h-6/12">
+          <div className="bg-zinc-800 w-full h-full p-2 flex flex-col justify-between">
             <span className="text-[var(--main-color)]">{course.date}</span>
             <div className="flex justify-between items-center">
               <h2 className="text-white text-2xl">{course.name}</h2>
