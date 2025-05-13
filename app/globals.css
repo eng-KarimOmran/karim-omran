@@ -55,3 +55,20 @@
   border-radius: 10px;
   border: 2px solid #1a1a1a;
 }
+
+.fadeIn{
+  opacity: 0;
+  animation:fadeInAnimation 1s forwards;
+  animation-delay: 1.5s;
+}
+@keyframes fadeInAnimation {
+  100%{
+    opacity: 100%;
+  }
+}
+
+.fadeIn-content{
+  opacity: 0;
+  animation:fadeInAnimation 1.5s forwards;
+  animation-delay: 0.8s;
+}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CiTextAlignLeft } from "react-icons/ci";
 import { RiCloseLargeLine } from "react-icons/ri";
 
@@ -10,16 +10,20 @@ export default function Navbar() {
   const links = [
     { path: "/", content: "Home" },
     { path: "/services", content: "Services" },
-    { path: "/resume", content: "Resume" },
+    { path: "/resume/education", content: "Resume" },
     { path: "/work", content: "Work" },
   ];
 
   const path = usePathname();
 
+  useEffect(() => {
+    setToggle(false);
+  }, [path]);
+
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="py-5 w-full ">
+    <nav className="py-5 w-full z-10">
       <div className="container flex justify-between items-center flex-wrap">
         <a
           className="flex items-center text-4xl font-semibold text-zinc-300"
@@ -39,7 +43,7 @@ export default function Navbar() {
         </button>
 
         <div
-          className={`fixed z-10 start-0 overflow-hidden top-0 lg:static bg-zinc-900 lg:bg-transparent bottom-0 py-2 transition-all duration-300 ${
+          className={`fixed z-10 start-0 overflow-hidden top-0 lg:static bg-zinc-900 lg:bg-transparent bottom-0 py-2 transition-all duration-200 ${
             toggle ? "end-0" : "end-full"
           }`}
         >
