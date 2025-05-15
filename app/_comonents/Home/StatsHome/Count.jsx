@@ -14,7 +14,7 @@ export default function Count({ num }) {
           return prev;
         }
       });
-    }, 200);
+    },2000 / num);
 
     return () => clearInterval(interval);
   }, [num]);
