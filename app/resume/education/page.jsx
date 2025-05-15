@@ -11,20 +11,6 @@ export default function EducationPage() {
       organized: "Route Academy",
       certificate: "certificateFront-endRoute.jpg",
     },
-        {
-      id: "1",
-      date: "2025 - March",
-      name: "Front-End developer",
-      organized: "Route Academy",
-      certificate: "certificateFront-endRoute.jpg",
-    },
-        {
-      id: "2",
-      date: "2025 - March",
-      name: "Front-End developer",
-      organized: "Route Academy",
-      certificate: "certificateFront-endRoute.jpg",
-    },
   ];
   const dataPage = {
     name: "Education",
