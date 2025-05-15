@@ -10,7 +10,7 @@ export default function EduExp({ data }) {
   return (
     <>
       {data.map((course) => (
-        <div key={course.id} className="my-5 px-5 w-full lg:w-6/12 h-4/12 md:h-6/12 lg:me-auto">
+        <div key={course.id} className="my-5 lg:my-0 lg:py-5 px-5 w-full lg:w-6/12 h-4/12 md:h-6/12 lg:me-auto">
           <div className="bg-zinc-800 w-full h-full p-2 flex flex-col justify-between">
             <span className="text-[var(--main-color)]">{course.date}</span>
             <div className="flex justify-between items-center">
