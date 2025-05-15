@@ -84,8 +84,9 @@ export default function SentMe() {
 
           <button
             type="submit"
+            disabled={!formik.isValid}
             className={`text-lg py-3 rounded-2xl max-w-[200px] transition-all duration-300 ${
-              formik.isValid && formik.touched.email && formik.touched.message
+              formik.isValid && formik.values.email && formik.values.message
                 ? "bg-[var(--main-color)] text-black cursor-pointer"
                 : "border-2 border-gray-500 text-gray-400 cursor-not-allowed"
             }`}
