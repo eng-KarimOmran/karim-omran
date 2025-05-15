@@ -11,7 +11,7 @@ export default function StatsHome() {
   ];
 
   return (
-    <div className="flex items-center justify-center md:justify-between w-full my-2 flex-wrap">
+    <div className="flex items-center justify-center md:justify-between w-full py-2 flex-wrap">
       {stats.map((stat) => (
         <div
           key={stat.content}
