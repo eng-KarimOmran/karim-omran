@@ -6,30 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Image from "next/image";
+import InformationProject from "../_comonents/Work/InformationProject/InformationProject";
 
-const CustomNextArrow = (props) => {
+const CustomNextArrow = () => {
   return <div style={{ display: "none" }} />;
 };
 
-const CustomPrevArrow = (props) => {
+const CustomPrevArrow = () => {
   return <div style={{ display: "none" }} />;
 };
 
 export default function Work() {
-  const [project, setProject] = useState(0);
-  let sliderRef = useRef(null);
-
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
-    beforeChange: (_, next) => setProject(next),
-  };
-
   const projects = [
     {
       id: "01",
@@ -93,6 +80,19 @@ export default function Work() {
       img: "weather.png",
     },
   ];
+  const [indexProject, setIndexProject] = useState(0);
+  let sliderRef = useRef(null);
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    beforeChange: (_, next) => setIndexProject(next),
+  };
 
   const next = () => {
     sliderRef?.slickNext();
@@ -101,46 +101,11 @@ export default function Work() {
   const previous = () => {
     sliderRef?.slickPrev();
   };
-  
+
   return (
     <div className="min-h-[calc(100dvh-100px)] flex flex-col items-center justify-center fadeIn-content">
       <div className="w-full flex justify-between items-center flex-col-reverse lg:flex-row flex-wrap">
-        <div className="w-full px-1  lg:w-6/12 lg:p-5">
-          <div className="border-b-[1px] border-b-zinc-700 py-3 flex flex-col gap-5">
-            <span className="text-4xl md:text-xl">{projects[project].id}</span>
-            <h2 className="text-white text-3xl md:text-6xl">
-              {projects[project].name}
-            </h2>
-            <p>{projects[project].description}</p>
-            <div className="text-[var(--main-color)]">
-              {projects[project].technologies}
-            </div>
-          </div>
-          <div className="pt-5 flex gap-5 items-center">
-            <a target="_blank" href={projects[project].gitHub} rel="noopener noreferrer">
-              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-zinc-700 hover:scale-[1.1] transition-all duration-300">
-                <Image
-                  src="/Icon/logo-github.gif"
-                  className="w-[100%]"
-                  alt="github"
-                  width={50}
-                  height={50}
-                />
-              </div>
-            </a>
-            <a target="_blank" href={projects[project].demo} rel="noopener noreferrer">
-              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-[50%] bg-zinc-700 hover:scale-[1.1] transition-all duration-300 p-1">
-                <Image
-                  src="/Icon/logo-eye.gif"
-                  className="w-[100%]"
-                  alt="eye"
-                  width={50}
-                  height={50}
-                />
-              </div>
-            </a>
-          </div>
-        </div>
+        {<InformationProject project={projects[indexProject]} />}
         <div className="w-full px-1 lg:w-6/12 lg:p-5 relative">
           <Slider
             {...settings}
@@ -148,15 +113,15 @@ export default function Work() {
               sliderRef = slider;
             }}
           >
-            {projects.map((p) => (
-              <div key={p.id} className="relative">
+            {projects.map((Project,index) => (
+              <div key={Project.id} className="relative">
                 <Image
-                  src={`/Img/Projects/${p.img}`}
-                  className="w-full h-[300px] object-contain object-center block"
-                  alt={p.name}
+                  src={`/Img/Projects/${Project.img}`}
+                  className="object-contain object-center"
+                  alt={Project.name}
                   width={800}
                   height={300}
-                  priority={project === parseInt(p.id) - 1}
+                  priority={index === indexProject}
                 />
               </div>
             ))}

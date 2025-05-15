@@ -1,25 +1,29 @@
 import React from "react";
-
-import LayoutResume from "@/app/_comonents/Resume/LayoutResume/LayoutResume";
 import Skills from "@/app/_comonents/Resume/Skills/Skills";
 
-import { 
-  MdAnimation 
-} from "react-icons/md";
-import { 
-  DiResponsive 
-} from "react-icons/di";
-import { 
-  BsFiletypeScss 
-} from "react-icons/bs";
-import { 
-  TbSeo 
-} from "react-icons/tb";
+import { MdAnimation } from "react-icons/md";
+import { DiResponsive } from "react-icons/di";
+import { BsFiletypeScss } from "react-icons/bs";
+import { TbSeo } from "react-icons/tb";
 import {
-  SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiBootstrap,
-  SiReact, SiNextdotjs, SiRedux, SiAxios, SiFormik, SiJson,
-  SiTypescript, SiJest, SiGithub, SiNpm, SiVite
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiBootstrap,
+  SiReact,
+  SiNextdotjs,
+  SiRedux,
+  SiAxios,
+  SiFormik,
+  SiJson,
+  SiTypescript,
+  SiJest,
+  SiGithub,
+  SiNpm,
+  SiVite,
 } from "react-icons/si";
+import ContentResume from "@/app/_comonents/Resume/ContentResume/ContentResume";
 
 const skillsData = [
   { id: "0", name: "Html5", icon: <SiHtml5 /> },
@@ -44,18 +48,17 @@ const skillsData = [
   { id: "19", name: "SEO", icon: <TbSeo /> },
 ];
 
-const data = {
+const dataPage = {
   name: "Skills",
   description:
     "A versatile set of technical and creative skills in front-end development, UI/UX design, and modern web technologies.",
-  content: skillsData,
 };
 
 export default function SkillsPage() {
   return (
-    <LayoutResume
-      data={data}
-      contentComponent={<Skills data={data.content} />}
+    <ContentResume
+      dataPage={dataPage}
+      children={<Skills data={skillsData} />}
     />
   );
 }

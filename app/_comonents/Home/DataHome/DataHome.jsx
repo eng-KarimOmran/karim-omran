@@ -28,8 +28,8 @@ export default function DataHome() {
       <div className="flex justify-start items-center gap-5 text-[var(--main-color)] flex-col lg:flex-row">
         <a
           className="border-[1px] border-[var(--main-color)] flex items-center justify-center gap-3 h-[35px] px-3 rounded-3xl text-sm hover:bg-[var(--main-color)]/50 transition-all duration-300"
-          href="CV/CV Karim Omran.pdf"
-          download="CV Karim Omran.pdf"
+          href="/CV/Karim Abdelhalim.pdf"
+          download
         >
           <span className="uppercase">DOWNLOAD CV</span>
           <FaDownload />

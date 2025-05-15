@@ -1,19 +1,28 @@
-import Experience from "@/app/_comonents/Resume/Experience/Experience";
-import LayoutResume from "@/app/_comonents/Resume/LayoutResume/LayoutResume";
+import ContentResume from "@/app/_comonents/Resume/ContentResume/ContentResume";
 import React from "react";
+import EduExp from "@/app/_comonents/Resume/EduExp/EduExp";
 
 export default function ExperiencePage() {
-  const data = {
+  const dataExperiences = [
+    {
+      id: "0",
+      date: "2025 - May",
+      name: "Front-End (Team Project)",
+      organized: "Borg El Arab Technological University",
+      certificate: null,
+    },
+  ];
+
+  const dataPage = {
     name: "Experience",
     description:
       "Built responsive interfaces using React, Next.js, Tailwind. Ensured performance.",
-    content: [{ id: null, date: null, experience: null, organized: null }],
   };
 
   return (
-    <LayoutResume
-      data={data}
-      contentComponent={<Experience data={data.content} />}
+    <ContentResume
+      dataPage={dataPage}
+      children={<EduExp data={dataExperiences} />}
     />
   );
 }

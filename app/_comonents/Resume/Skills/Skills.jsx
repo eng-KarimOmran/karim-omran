@@ -1,6 +1,10 @@
 import React from "react";
+import NoData from "../No Data/NoData";
 
 export default function Skills({ data }) {
+  if (!data) {
+    return <NoData page={"Education"} />;
+  }
   return data.map((skill) => (
     <div key={skill.id} className="p-10 w-full md:w-6/12 lg:w-3/12 h-6/12">
       <div className="bg-zinc-800 text-6xl h-full rounded-3xl p-3 flex flex-col justify-center items-center relative group hover:text-[var(--main-color)] transition-all duration-300">
