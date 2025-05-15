@@ -9,7 +9,7 @@ export default function Home() {
         <DataHome />
         <ImgHome />
       </div>
-      <StatsHome />
+      {/* <StatsHome /> */}
     </section>
   );
 }
