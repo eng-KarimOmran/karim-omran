@@ -72,3 +72,8 @@
   animation:fadeInAnimation 1.5s forwards;
   animation-delay: 0.8s;
 }
+
+.fadeIn-content-Resume{
+  opacity: 0;
+  animation:fadeInAnimation 0.5s forwards;
+}

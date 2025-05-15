@@ -2,7 +2,7 @@ import Links from "../_comonents/Resume/LinksNav/Links";
 
 export default function latout({children}) {
   return (
-    <div className="w-full min-h-[calc(100dvh-100px)] flex justify-center items-center p-3">
+    <div className="w-full min-h-[calc(100dvh-100px)] flex justify-center items-center p-3 fadeIn-content">
       <div className="flex justify-between flex-col lg:flex-row gap-5 w-full h-full items-center">
         <div className="flex flex-col gap-5">
           <h2 className="text-5xl text-white">Why hire me?</h2>
