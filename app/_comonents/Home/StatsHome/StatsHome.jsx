@@ -15,7 +15,7 @@ export default function StatsHome() {
       {stats.map((stat) => (
         <div
           key={stat.content}
-          className="flex items-center gap-1 justify-center w-full md:w-6/12 lg:w-auto max-w-[250px] pb-3 pt-8 border-b-[1px] border-gray-300/20"
+          className="flex items-center gap-1 justify-center w-full md:w-6/12 lg:w-auto max-w-[250px] pb-3 pt-8"
         >
           <Count num={stat.num} />
           <span className="max-w-[100px]">{stat.content}</span>
