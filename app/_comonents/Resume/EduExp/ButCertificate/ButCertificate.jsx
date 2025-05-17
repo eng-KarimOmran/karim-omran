@@ -17,7 +17,7 @@ export default function ButCertificate({ Img }) {
     <>
       <button
         onClick={() => handleOpen(Img)}
-        className="hover:text-[var(--main-color)] transition-all duration-300 text-2xl cursor-pointer"
+        className="text-[var(--main-color)] transition-all duration-300 text-2xl cursor-pointer"
       >
         <TbCertificate />
       </button>

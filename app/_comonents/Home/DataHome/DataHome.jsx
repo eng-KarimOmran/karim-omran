@@ -16,15 +16,17 @@ export default function DataHome() {
   ];
   return (
     <div className="flex flex-col gap-3 items-center md:items-start">
-      <h2 className="text-xl">Software Developer</h2>
+      <h2 className="text-xl">Front-End Developer</h2>
       <div className="text-5xl lg:text-7xl text-white">Hello Iam</div>
       <h3 className="text-5xl text-center md:text-start lg:text-7xl text-[var(--main-color)]">
         Karim Abdelhalim
       </h3>
-      <p className="text-lg text-gray-500 max-w-[300px] text-center md:text-start">
-        Passionate about building clean, user-friendly interfaces, I bring ideas
-        to life using cutting-edge tools and technologies.
-      </p>
+      <ul className="text-lg text-gray-300 text-center md:text-start flex flex-col gap-2">
+        <li>Have you ever felt frustrated with a slow website that doesn’t work well across all devices ?</li>
+        <li>Or a UI that looks inconsistent depending on the visitor ?</li>
+        <li>Maybe delays in project delivery or unclear communication left you stressed ?</li>
+        <li>I’m here to fix these challenges and make your experience smooth and worry-free.</li>
+      </ul>
       <div className="flex justify-start items-center gap-5 text-[var(--main-color)] flex-col lg:flex-row">
         <a
           className="border-[1px] border-[var(--main-color)] flex items-center justify-center gap-3 h-[35px] px-3 rounded-3xl text-sm hover:bg-[var(--main-color)]/50 transition-all duration-300"

@@ -19,7 +19,6 @@ export default function LayoutNavigation() {
   const currentDepth = getPathDepth(currentPath);
   const previousPath = pathHistoryRef.current[1];
   const previousDepth = getPathDepth(previousPath);
-
   if (currentDepth > 1 && (previousPath === undefined || previousDepth > 1)) {
     return null;
   }

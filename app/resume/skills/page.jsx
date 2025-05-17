@@ -29,7 +29,7 @@ const skillsData = [
   { id: "0", name: "Html5", icon: <SiHtml5 /> },
   { id: "1", name: "Css", icon: <SiCss3 /> },
   { id: "2", name: "JavaScript", icon: <SiJavascript /> },
-  { id: "3", name: "Responsive Design", icon: <DiResponsive /> },
+  { id: "3", name: "Responsive", icon: <DiResponsive /> },
   { id: "4", name: "SCSS", icon: <BsFiletypeScss /> },
   { id: "5", name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { id: "6", name: "Bootstrap", icon: <SiBootstrap /> },
