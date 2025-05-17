@@ -19,7 +19,7 @@ export default function DataHome() {
       <h2 className="text-xl">Front-End Developer</h2>
       <div className="text-5xl lg:text-7xl text-white">Hello Iam</div>
       <h3 className="text-5xl text-center md:text-start lg:text-7xl text-[var(--main-color)]">
-        Karim Abdelhalim
+        Karim Omran
       </h3>
       <ul className="text-lg text-gray-300 text-center md:text-start flex flex-col gap-2">
         <li>Have you ever felt frustrated with a slow website that doesn’t work well across all devices ?</li>

@@ -5,7 +5,7 @@ import React from "react";
 export default function AboutMePage() {
   const dataAbout = {
     id: "0",
-    Name: "Karim Abdelhalim",
+    Name: "Karim Omran",
     Experience: "+1 Year",
     Country: "Egypt",
     State: "Alexandria",
