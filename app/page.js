@@ -5,7 +5,7 @@ import StatsHome from "./_comonents/Home/StatsHome/StatsHome";
 export default function Home() {
   return (
     <section className="min-h-[calc(100dvh-100px)] flex flex-col justify-around fadeIn-content">
-      <div className="flex justify-between items-center flex-col-reverse md:flex-row">
+      <div className="flex justify-between items-center flex-col-reverse lg:flex-row">
         <DataHome />
         <ImgHome />
       </div>

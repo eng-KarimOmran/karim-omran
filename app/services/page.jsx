@@ -33,14 +33,14 @@ export default function Services() {
         <div key={service.id} className="w-full lg:w-6/12 p-5 lg:p-9 group">
           <div className="flex flex-col border-b-[1px] border-zinc-700 pb-2 gap-5 h-[250px]">
             <div className="w-full flex items-center justify-between">
-              <span className="text-6xl group-hover:text-[var(--main-color)] group-active:text-[var(--main-color)] transition-colors duration-300">
+              <span className="text-6xl group-hover:text-[var(--main-color)] transition-colors duration-300">
                 {service.id}
               </span>
-              <span className="w-[50px] h-[50px] rounded-[50%] bg-white flex items-center justify-center group-hover:bg-[var(--main-color)] group-active:bg-[var(--main-color)] transition-all duration-500 transform hover:rotate-0 group-active:rotate-0 rotate-30">
+              <span className="w-[50px] h-[50px] rounded-[50%] bg-white flex items-center justify-center group-hover:bg-[var(--main-color)] transition-all duration-500 transform hover:rotate-0 rotate-30">
                 <IoIosArrowRoundForward className="text-black text-4xl transition-transform duration-500" />
               </span>
             </div>
-            <h2 className="text-4xl text-white group-hover:text-[var(--main-color)] group-active:text-[var(--main-color)] transition-colors duration-300">
+            <h2 className="text-4xl text-white group-hover:text-[var(--main-color)] transition-colors duration-300">
               {service.Service}
             </h2>
             <p className="text-zinc-500">{service.discretion}</p>
