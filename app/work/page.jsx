@@ -33,7 +33,7 @@ export default function Work() {
       name: "Recipe",
       description:
         "Recipe is an all-in-one platform for food lovers and home cooks. It provides a large variety of tested recipes from across the globe, offering step-by-step instructions and stunning visuals, making cooking fun and simple for everyone, no matter their skill level.",
-      technologies: "Javascript , Tailwind Css , Html5 , React , axios",
+      technologies: "Javascript , Scss , Html5 , React , axios",
       gitHub: "https://github.com/eng-KarimOmran/Recipe",
       demo: "https://recipe-seven-olive.vercel.app/",
       img: "recipe.png",
