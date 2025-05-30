@@ -1,6 +1,6 @@
 @import "tailwindcss";
 :root {
-  --main-color: #FFDF5A;
+  --main-color: #ffdf5a;
 }
 
 .container {
@@ -56,24 +56,33 @@
   border: 2px solid #1a1a1a;
 }
 
-.fadeIn{
-  opacity: 0;
-  animation:fadeInAnimation 1s forwards;
-  animation-delay: 1.5s;
-}
 @keyframes fadeInAnimation {
-  100%{
+  100% {
     opacity: 100%;
   }
 }
 
-.fadeIn-content{
+.fadeIn-content {
   opacity: 0;
-  animation:fadeInAnimation 1.5s forwards;
+  animation: fadeInAnimation 1.5s forwards;
   animation-delay: 0.8s;
 }
 
-.fadeIn-content-Resume{
+.fadeIn-content-Min {
   opacity: 0;
-  animation:fadeInAnimation 0.5s forwards;
+  animation: fadeInAnimation 0.5s forwards;
+}
+.imgHome {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  animation: fadeInAnimation 1s forwards;
+  animation-delay: 1.5s;
+  position: relative;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

@@ -11,7 +11,7 @@ export default function Navbar() {
     { path: "/", content: "Home" },
     { path: "/services", content: "Services" },
     { path: "/resume/education", content: "Resume" },
-    { path: "/work", content: "Work" },
+    { path: "/work/01-ai-lap", content: "Work" },
   ];
 
   const path = usePathname();
