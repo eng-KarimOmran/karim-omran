@@ -1,7 +1,7 @@
 
-import MyInformation from "./(home)/MyInformation";
-import MyPhoto from "./(home)/MyPhoto";
-import StatsHome from "./(home)/StatsHome";
+import MyInformation from "./(home)/Components/MyInformation";
+import MyPhoto from "./(home)/Components/MyPhoto";
+import StatsHome from "./(home)/Components/StatsHome";
 
 export default function Home() {
   return (

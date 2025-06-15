@@ -1,5 +1,5 @@
 import React from "react";
-import ContentNav from "./ContentNav";
+import ContentNav from "./Components/ContentNav";
 
 export default function Navbar() {
   const links = [
