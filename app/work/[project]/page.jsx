@@ -1,6 +1,6 @@
 import React from "react";
 import { redirect } from "next/navigation";
-import ContentProject from "../ContentProject/page";
+import ContentProject from "../Components/ContentProject/ContentProject";
 
 export default function Project({ params }) {
   const path = params.project.split("-")[0];
