@@ -3,12 +3,12 @@ import { redirect } from "next/navigation";
 import ContentProject from "../Components/ContentProject/ContentProject";
 
 export default function Project({ params }) {
-  const path = params.project.split("-")[0];
+  const path = params.project;
 
   const projects = [
     {
       id: "01",
-      path: "01-ai-lap",
+      path: "ai-lap",
       name: "Ai Lap",
       description:
         "Ai Lap is a versatile platform designed to help students quickly dive into the world of artificial intelligence and programming...",
@@ -19,7 +19,7 @@ export default function Project({ params }) {
     },
     {
       id: "02",
-      path: "02-recipe",
+      path: "recipe",
       name: "Recipe",
       description:
         "Recipe is an all-in-one platform for food lovers and home cooks...",
@@ -30,18 +30,19 @@ export default function Project({ params }) {
     },
     {
       id: "03",
-      path: "03-fresh-cart",
+      path: "fresh-cart",
       name: "Fresh Cart",
       description:
         "Fresh Cart is an innovative online platform that transforms the shopping experience for fresh products...",
-      technologies: "Javascript , Tailwind Css , Html5 , React , axios , Context , TanStack Query",
+      technologies:
+        "Javascript , Tailwind Css , Html5 , React , axios , Context , TanStack Query",
       gitHub: "https://github.com/eng-KarimOmran/FreshCart",
       demo: "https://fresh-cart-murex-six.vercel.app/",
       img: "fresh-cart.png",
     },
     {
       id: "04",
-      path: "04-book-mark",
+      path: "book-mark",
       name: "Book Mark",
       description:
         "Book Mark is a simple and intuitive platform to organize, save, and manage your favorite websites...",
@@ -52,7 +53,7 @@ export default function Project({ params }) {
     },
     {
       id: "05",
-      path: "05-games",
+      path: "games",
       name: "Games",
       description:
         "Games is an interactive platform that offers a wide variety of games for all interests...",
@@ -63,7 +64,7 @@ export default function Project({ params }) {
     },
     {
       id: "06",
-      path: "06-weather",
+      path: "weather",
       name: "Weather",
       description:
         "Weather provides real-time updates and accurate forecasts for your location...",
@@ -74,15 +75,17 @@ export default function Project({ params }) {
     },
   ];
 
-  const index = projects.findIndex((project) => project.id === path);
+  const index = projects.findIndex((project) => project.path === path);
 
   if (index === -1) {
     return redirect("/not-found");
   }
 
   const project = projects[index];
-  const nextProject = index === projects.length - 1 ? projects[0] : projects[index + 1];
-  const prevProject = index === 0 ? projects[projects.length - 1] : projects[index - 1];
+  const nextProject =
+    index === projects.length - 1 ? projects[0] : projects[index + 1];
+  const prevProject =
+    index === 0 ? projects[projects.length - 1] : projects[index - 1];
 
   const data = {
     ...project,
