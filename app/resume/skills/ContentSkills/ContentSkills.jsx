@@ -1,5 +1,5 @@
 import React from "react";
-import NoData from "../../Components/NoData/NoData";
+import NoData from "../../../Components/NoData/NoData";
 
 export default function ContentSkills({ data , dataPage }) {
   console.log(data.length)

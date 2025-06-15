@@ -1,4 +1,4 @@
-import NoData from "@/app/resume/Components/NoData/NoData";
+import NoData from "@/app/Components/NoData/NoData";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,7 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function ContentProject({ data }) {
-  if (data.name === undefined) {
+  if (!data || data.name === undefined) {
     return <NoData page={"Projects"} />;
   }
 

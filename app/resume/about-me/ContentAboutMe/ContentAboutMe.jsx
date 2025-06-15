@@ -1,5 +1,5 @@
 import React from "react";
-import NoData from "../../Components/NoData/NoData";
+import NoData from "../../../Components/NoData/NoData";
 export default function ContentAboutMe({ data, dataPage }) {
   if (data.length === 0) {
     return <NoData page={dataPage.name} />;

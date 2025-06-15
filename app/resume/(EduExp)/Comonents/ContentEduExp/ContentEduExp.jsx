@@ -1,5 +1,5 @@
 import React from "react";
-import NoData from "@/app/resume/Components/NoData/NoData";
+import NoData from "@/app/Components/NoData/NoData";
 import ButCertificate from "../ButCertificate/ButCertificate";
 
 export default function ContentEduExp({ data , dataPage }) {
