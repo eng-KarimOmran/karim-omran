@@ -9,9 +9,9 @@ export default function ButCertificate({ imgName }) {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="text-[var(--main-color)] transition-all duration-300 text-2xl cursor-pointer"
+        className="text-[var(--main-color)] text-2xl cursor-pointer"
       >
-        <TbCertificate />
+        <TbCertificate className="hover:scale-125 transition-all duration-300" />
       </button>
       {isOpen ? (
         <divv
