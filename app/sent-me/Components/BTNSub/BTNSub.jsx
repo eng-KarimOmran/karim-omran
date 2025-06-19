@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BTNSub({ formik }) {
+export default function BTNSub({ formik , isLoading }) {
   function isValid() {
     const valuesFormik = Object.values(formik.values);
     for (const value of valuesFormik) {
@@ -14,14 +14,16 @@ export default function BTNSub({ formik }) {
   return (
     <button
       type="submit"
-      disabled={!isValid()}
+      disabled={!isValid() || isLoading}
       className={`text-xl py-3 rounded-xl text-zinc-200 w-[200px] my-2 ${
-        isValid()
+        isValid() && !isLoading
           ? "bg-[var(--main-color)]/85 cursor-pointer"
           : "bg-[var(--main-color)]/30 cursor-not-allowed"
       }`}
     >
-      Send
+      {
+        isLoading ? "Sending..." : "Send"
+      }
     </button>
   );
 }
