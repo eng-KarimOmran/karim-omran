@@ -10,7 +10,7 @@ import axios from "axios";
 import MessageSuccessfully from "../MessageSuccessfully/MessageSuccessfully";
 
 export default function Form() {
-  const [isSuccessfully, setIsSuccessfully] = useState(false);
+  const [isSuccessfully, setIsSuccessfully] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   async function sendmessage(data) {
     try {
