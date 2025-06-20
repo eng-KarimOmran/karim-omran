@@ -7,7 +7,7 @@ export default function Navbar() {
     { path: "/services", content: "Services" },
     { path: "/resume/education", content: "Resume" },
     { path: "/work/ai-lap", content: "Work" },
-    { path: "/sent-me", content: "sent-me" },
+    { path: "/sent-me", content: "Sent me" },
   ];
 
   return (
