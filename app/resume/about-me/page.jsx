@@ -5,7 +5,7 @@ import ContentAboutMe from "./ContentAboutMe/ContentAboutMe";
 export default function AboutMe() {
   const data = {
     id: "0",
-    Name: "Karim Abdelhalim",
+    Name: "Karim Omran",
     Experience: "+1 Year",
     Country: "Egypt",
     State: "Alexandria",
