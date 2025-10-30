@@ -1,0 +1,134 @@
+{
+  "heroSection": {
+    "title": "Mern Stack Developer",
+    "greeting": "Hi, I'm",
+    "name": "Karim Omran",
+    "description": "A passionate mern stack developer who loves creating digital solutions and building complete web applications. Always eager to learn and grow, with a goal of delivering simple and valuable user experiences, whether working independently or as part of a team.",
+    "cvLink": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1761793228/Karim_Abdelhalim_Mostafa_Sherif_Omran_Software_Engineer_resume_1_xx3zxr.pdf",
+    "image": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1760318505/main/hero_zw0xan_1_cgjfak.webp",
+    "socialLinks": [
+      {
+        "id": 1,
+        "label": "GitHub",
+        "icon": "FaGithub",
+        "path": "https://github.com/eng-KarimOmran"
+      },
+      {
+        "id": 2,
+        "label": "LinkedIn",
+        "icon": "FaLinkedin",
+        "path": "https://www.linkedin.com/in/karim-omran"
+      },
+      {
+        "id": 3,
+        "label": "Email",
+        "icon": "FaEnvelope",
+        "path": "mailto:eng.karimomran@gmail.com"
+      },
+      {
+        "id": 4,
+        "label": "WhatsApp",
+        "icon": "FaWhatsapp",
+        "path": "https://wa.me/201277913201"
+      }
+    ]
+  },
+  "servicesSection": [
+    {
+      "id": 1,
+      "title": "Frontend Development",
+      "description": "I create responsive, clean, and modern front-end designs."
+    },
+    {
+      "id": 2,
+      "title": "Backend Development",
+      "description": "I build robust, scalable, and efficient server-side applications."
+    },
+    {
+      "id": 3,
+      "title": "Relational Databases",
+      "description": "Design and manage structured databases using SQL MySQL."
+    },
+    {
+      "id": 4,
+      "title": "Non-Relational Databases",
+      "description": "Work with flexible NoSQL databases like MongoDB."
+    },
+    {
+      "id": 5,
+      "title": "Web Testing",
+      "description": "I ensure functionality, usability, performance, security, and compatibility."
+    },
+    {
+      "id": 6,
+      "title": "SEO",
+      "description": "I optimize websites for better visibility, traffic, rankings, engagement, and conversion."
+    }
+  ],
+  "resumeSection": {
+    "education": {
+      "certificates": [
+        {
+          "id": 1,
+          "date": "2025 - March",
+          "side": "Route Academy",
+          "title": "Front-End Developer",
+          "img": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1760323478/certificate-front-end-route_ntf9aa_g1qnlo.webp"
+        }
+      ]
+    },
+    "about": {
+      "personalInfo": {
+        "name": "Karim Omran",
+        "experience": "+2 Year",
+        "country": "Egypt",
+        "state": "Alexandria",
+        "phone": "(+20) 1277913201",
+        "email": "eng.karimomran@gmail.com",
+        "education": "Diploma in IT",
+        "languages": ["Arabic", "English"]
+      }
+    }
+  },
+  "workSection": {
+    "projects": [
+      {
+        "id": 3,
+        "title": "Games",
+        "description": "Games is an interactive platform that offers a wide range of games for all interests in one place.",
+        "img": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1760416166/games_2_fx4piq.webp",
+        "demo": "https://games-online-nu.vercel.app/",
+        "code": "https://github.com/eng-KarimOmran/Games",
+        "skills": ["Html5", "Bootstrap", "Javascript", "axios"]
+      },
+      {
+        "id": 2,
+        "title": "Recipe",
+        "description": "Recipe is a modern and responsive web application built with React and Vite, designed to help users discover and explore various food recipes easily.",
+        "img": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1761796448/recipe_1_owldaq.webp",
+        "demo": "https://recipe-seven-olive.vercel.app",
+        "code": "https://github.com/eng-KarimOmran/Recipe",
+        "skills": ["Html5", "Scss", "React", "Vite", "axios"]
+      },
+      {
+        "id": 1,
+        "title": "Fresh Cart",
+        "description": "FreshCart is a fast, responsive e-commerce app with a clean and seamless shopping experience.",
+        "img": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1761797123/Screenshot_2025-10-30_070504_qk4dyy.png",
+        "demo": "https://fresh-cart-murex-six.vercel.app",
+        "code": "https://github.com/eng-KarimOmran/FreshCart",
+        "skills": [
+          "Html5",
+          "Tailwind CSS",
+          "React",
+          "Vite",
+          "axios",
+          "formik",
+          "yup",
+          "Context",
+          "tanstack"
+        ]
+      }
+    ]
+  }
+}
