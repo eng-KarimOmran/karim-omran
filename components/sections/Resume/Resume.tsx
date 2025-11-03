@@ -29,7 +29,7 @@ export default function Resume() {
         ))}
       </ul>
 
-      <ScrollArea className="w-full mx-auto h-96 my-5 bg-primary-foreground whitespace-nowrap rounded-md p-2">
+      <ScrollArea className="w-full mx-auto h-80 my-5 bg-primary-foreground rounded-md p-2">
         {active === "Education" && <Education />}
         {active === "Skills" && <Skills />}
         {active === "About" && <About />}

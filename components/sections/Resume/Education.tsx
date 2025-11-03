@@ -66,11 +66,12 @@ export default function Education() {
               alt="certificate"
               width={1778}
               height={1264}
-              className="object-contain w-full h-auto"
+              className="object-contain w-full h-auto transition-opacity duration-300"
+              loading="eager"
             />
             <button
               onClick={() => setOpenCertificate("")}
-              className="absolute top-0 end-0 p-1 rounded-lg m-3 bg-zinc-800 text-white"
+              className="absolute top-0 right-0 p-1 rounded-lg m-3 bg-zinc-800 text-white"
             >
               <X />
             </button>

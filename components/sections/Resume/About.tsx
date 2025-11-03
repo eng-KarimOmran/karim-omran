@@ -17,8 +17,8 @@ export default function About() {
   return (
     <ul className="grid grid-cols-1 md:grid-cols-2 gap-5 text-lg">
       {profileEntries.map(([key, value]) => (
-        <li key={key} className="bg-muted p-5 rounded-2xl">
-          <span className="text-muted-foreground font-semibold capitalize">
+        <li key={key} className="bg-muted p-4 rounded-2xl">
+          <span className="text-muted-foreground font-semibold capitalize text-wrap">
             {key.replace("_", " ")}:{" "}
           </span>
           {Array.isArray(value) ? value.join(", ") : value}
