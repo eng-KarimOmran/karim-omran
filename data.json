@@ -93,6 +93,15 @@
   "workSection": {
     "projects": [
       {
+        "id": 4,
+        "title": "Driving Academy",
+        "description": "Driving Academy Web App A full training management platform, featuring online session booking, trainee management, payment verification, admin roles, and a modern responsive UI using Next.js, TailwindCSS, and shadcn ui.",
+        "img": "https://res.cloudinary.com/djh0tsi3i/image/upload/v1764360648/Screenshot_2025-11-28_214957_gxutgs.png",
+        "demo": "https://drive-safe-academy-liard.vercel.app/",
+        "code": "https://github.com/eng-KarimOmran/drive-safe-academy",
+        "skills": ["Html5", "TailwindCSS", "Typescript", "Shadcn ui", "Next js"]
+      },
+      {
         "id": 3,
         "title": "Games",
         "description": "Games is an interactive platform that offers a wide range of games for all interests in one place.",
