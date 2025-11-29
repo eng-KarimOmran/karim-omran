@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     "Express",
   ],
   authors: [
-    { name: "Karim Omran", url: "https://portfolio-nine-murex-78.vercel.app/" },
+    { name: "Karim Omran", url: "https://karim-omran.vercel.app/" },
   ],
   openGraph: {
     title: "Karim | Portfolio",
     description: "Explore projects, skills, and contact information.",
-    url: "https://portfolio-nine-murex-78.vercel.app/",
+    url: "https://karim-omran.vercel.app/",
     siteName: "Karim Omran",
     images: [
       {
