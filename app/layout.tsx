@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
 import { Separator } from "@/components/ui/separator";
 import Footer from "@/components/common/Footer";
-
 import { Poppins, Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -20,41 +18,29 @@ const inter = Inter({
   variable: "--font-body",
 });
 
-export const metadata: Metadata = {
-  title: "Karim | Portfolio",
-  description: "Personal portfolio of Karim Omran - Full Stack Developer.",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
-  keywords: [
-    "Karim Omran",
-    "Full Stack Developer",
-    "React",
-    "Next.js",
-    "Node",
-    "Express",
-  ],
-  authors: [
-    { name: "Karim Omran", url: "https://karim-omran.vercel.app/" },
-  ],
-  openGraph: {
-    title: "Karim | Portfolio",
-    description: "Explore projects, skills, and contact information.",
-    url: "https://karim-omran.vercel.app/",
-    siteName: "Karim Omran",
-    images: [
-      {
-        url: "https://res.cloudinary.com/djh0tsi3i/image/upload/v1764401974/2_lu4uq6.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Karim Omran Portfolio",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
+// export const metadata = {
+//   title: "Karim | Portfolio",
+//   description: "Explore the portfolio of Karim Omran, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch.",
+//   icons: {
+//     icon: "/favicon.png",
+//     shortcut: "/favicon.png",
+//   },
+//   openGraph: {
+//     title: "Karim | Portfolio",
+//     description: "Explore the portfolio of Karim Omran, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch.",
+//     url: "https://karim-omran.vercel.app/",
+//     siteName: "Karim Omran",
+//     images: [
+//       {
+//         url: "https://res.cloudinary.com/djh0tsi3i/image/upload/v1764401974/2_lu4uq6.jpg",
+//         width: 1200,
+//         height: 630,
+//         alt: "Karim Omran Portfolio",
+//       },
+//     ],
+//     type: "website",
+//   },
+// };
 
 export default function RootLayout({
   children,
@@ -63,6 +49,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://res.cloudinary.com/djh0tsi3i/image/upload/v1764401974/2_lu4uq6.jpg"
+        />
+        <meta property="og:title" content="Karim | Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore the portfolio of Karim Abdelhalim, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch."
+        />
+        <meta property="og:url" content="https://karim-omran.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <title>Karim | Portfolio</title>
+      </head>
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
