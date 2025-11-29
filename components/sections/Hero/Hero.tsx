@@ -46,14 +46,16 @@ export default function Hero() {
           ))}
         </ul>
       </div>
-      <div className="relative aspect-[3/4] w-10/12 sm:w-9/12 md:w-6/12 lg:w-3/12 rounded-2xl border-2 border-primary">
-        <Image
-          src={heroSection.image}
-          alt="Full Stack Developer Avatar"
-          className="object-cover rounded-2xl"
-          fill
-          priority
-        />
+      <div className="relative aspect-[3/4] w-10/12 sm:w-9/12 md:w-6/12 lg:w-3/12">
+        <div className="absolute inset-0 rounded-2xl border-2 border-primary overflow-hidden">
+          <Image
+            src={heroSection.image}
+            alt="karim"
+            className="object-cover"
+            fill
+            priority
+          />
+        </div>
       </div>
     </section>
   );
