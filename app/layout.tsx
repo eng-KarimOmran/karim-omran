@@ -18,30 +18,6 @@ const inter = Inter({
   variable: "--font-body",
 });
 
-// export const metadata = {
-//   title: "Karim | Portfolio",
-//   description: "Explore the portfolio of Karim Omran, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch.",
-//   icons: {
-//     icon: "/favicon.png",
-//     shortcut: "/favicon.png",
-//   },
-//   openGraph: {
-//     title: "Karim | Portfolio",
-//     description: "Explore the portfolio of Karim Omran, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch.",
-//     url: "https://karim-omran.vercel.app/",
-//     siteName: "Karim Omran",
-//     images: [
-//       {
-//         url: "https://res.cloudinary.com/djh0tsi3i/image/upload/v1764401974/2_lu4uq6.jpg",
-//         width: 1200,
-//         height: 630,
-//         alt: "Karim Omran Portfolio",
-//       },
-//     ],
-//     type: "website",
-//   },
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
