@@ -61,6 +61,8 @@ export default function RootLayout({
           content="https://res.cloudinary.com/djh0tsi3i/image/upload/v1764401974/2_lu4uq6.jpg"
         />
         <meta property="og:title" content="Karim | Portfolio" />
+        <meta name="author" content="Karim Abdelhalim" />
+        <meta name="date" content="2025-11-29T09:00:00Z" />
         <meta
           property="og:description"
           content="Explore the portfolio of Karim Abdelhalim, a Full Stack Developer. Discover projects, skills, experience, and ways to get in touch."
